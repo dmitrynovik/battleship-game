@@ -18,7 +18,7 @@ namespace BattleshipGame
         public uint Left { get; }
         public uint Top { get; }
 
-        public abstract IReadOnlyCollection<Point2D> GetPoints();
+        public abstract IEnumerable<Point2D> GetPoints();
 
         public bool Attack(Point2D point)
         {

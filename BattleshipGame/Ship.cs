@@ -27,7 +27,7 @@ namespace BattleshipGame
         public uint Size { get; }
         public Direction Orientation { get ;}
 
-        public override IReadOnlyCollection<Point2D> GetPoints() => _points;
+        public override IEnumerable<Point2D> GetPoints() => _points;
 
         public override string ToString() => $"{nameof(Ship)} (Left={Left},Top={Top},Size={Size},Orientation={Orientation})";
     }

@@ -66,7 +66,7 @@ namespace BattleshipGame.Tests
         public void When_Hit_All_Ships_Game_Is_Lost() => ((Board2D) MakeBoardWithShipsAndHitAll())
             .IsGameLost.Should().Be(true);
 
-        protected virtual Board2D MakeBoard() => new SparseBoard2D();
+        protected virtual Board2D MakeBoard() => new FastBoard2D();
 
         private Board2D MakeBoardWithShips() => MakeBoard()
             .Add(new Ship(1, 1, Direction.Horizontal, 2))
