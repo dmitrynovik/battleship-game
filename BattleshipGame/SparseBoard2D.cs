@@ -7,7 +7,11 @@ namespace BattleshipGame
     /// <summary>
     /// The sparse 2D game board which is only allocating memory for occupied points.
     /// PROs: allocates very little memory (only for points occupied by pieces)
-    /// CONs: stores unordered points, and hence is not good for boards with many pieces as the point search in an unordered collection becomes slow.
+    /// CONs: stores unordered points occupied by pieces, 
+    ///     and hence is not good for boards with many pieces as the point search in an unordered collection becomes slow.
+    /// SHOULD BE USED in the following cases:
+    /// - small-sized boards (e.g. 10x10)
+    /// - sparse boards (the board is large but the pieces are not many)
     /// </summary>    
     public class SparseBoard2D : Board2D
     {
