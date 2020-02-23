@@ -6,8 +6,6 @@ namespace BattleshipGame
 {
     public class Ship : Piece
     {
-        public enum Direction { Horizontal, Vertical }
-
         private readonly Point2D[] _points;
 
         public Ship(uint x, uint y, Direction orientation, uint size)

@@ -13,7 +13,7 @@ namespace BattleshipGame
         public uint Height { get; }
         public uint Width { get; }  
 
-        public bool Add(Piece piece)
+        public bool TryAdd(Piece piece)
         {
             if (piece.GetPoints().Any(p => p.X >= Width || p.Y >= Height))
             {
@@ -21,10 +21,16 @@ namespace BattleshipGame
                 return false;
             }
 
-            return AddImpl(piece);
+            return TryAddImpl(piece);
         }
 
-        protected abstract bool AddImpl(Piece piece);
+        public Board2D Add(Piece piece)
+        {
+            TryAdd(piece);
+            return this;
+        }
+
+        protected abstract bool TryAddImpl(Piece piece);
 
         public bool IsGameLost => IsDead;
 
