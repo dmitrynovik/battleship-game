@@ -13,7 +13,7 @@ namespace BattleshipGame
 
         public override IReadOnlyCollection<Point2D> GetPoints() => _points;
 
-        public override bool Add(Piece piece)
+        protected override bool AddImpl(Piece piece)
         {
             var piecePoints = piece.GetPoints();
 
