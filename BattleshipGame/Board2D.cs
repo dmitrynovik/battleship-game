@@ -9,7 +9,7 @@ namespace BattleshipGame
     /// </summary>    
     public abstract class Board2D : Piece
     {
-        public Board2D(uint width = 10, uint height = 10)
+        public Board2D(uint width = 10, uint height = 10) : base(0, 0)
         {
             Height = height;
             Width = width;

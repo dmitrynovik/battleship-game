@@ -9,6 +9,15 @@ namespace BattleshipGame
     /// </summary>    
     public abstract class Piece
     {
+        public Piece(uint left, uint top)
+        {
+            Left = left;
+            Top = top;
+        }
+
+        public uint Left { get; }
+        public uint Top { get; }
+
         public abstract IReadOnlyCollection<Point2D> GetPoints();
 
         public bool Attack(Point2D point)

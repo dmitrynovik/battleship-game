@@ -23,5 +23,7 @@ namespace BattleshipGame
             var pt = obj as Point2D;
             return pt != null && pt.X == X && pt.Y == Y;
         }
+
+        public override string ToString() => $"{nameof(Point2D)} ({X},{Y})";
     }
 }

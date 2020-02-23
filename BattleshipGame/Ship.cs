@@ -8,7 +8,7 @@ namespace BattleshipGame
     {
         private readonly Point2D[] _points;
 
-        public Ship(uint x, uint y, Direction orientation, uint size)
+        public Ship(uint left, uint top, Direction orientation, uint size) : base(left, top)
         {
             if (size <= 0)
                 throw new ArgumentException("Size must be a positive number", nameof(size));
@@ -18,8 +18,8 @@ namespace BattleshipGame
 
             _points =  Enumerable.Range(0, Convert.ToInt32(Size))
                 .Select(n => Orientation == Direction.Horizontal ?
-                    new Point2D((uint)(x + n), (uint)y, this) :
-                    new Point2D((uint)x, (uint)(y + n), this)
+                    new Point2D((uint)(left + n), (uint)top, this) :
+                    new Point2D((uint)left, (uint)(top + n), this)
                 )
                 .ToArray();
         }
@@ -28,5 +28,8 @@ namespace BattleshipGame
         public Direction Orientation { get ;}
 
         public override IReadOnlyCollection<Point2D> GetPoints() => _points;
+
+        public override string ToString() => $"{nameof(Ship)} (Left={Left},Top={Top},Size={Size},Orientation={Orientation})";
+
     }
 }
