@@ -20,7 +20,7 @@ namespace BattleshipGame
 
         public abstract IEnumerable<Point2D> GetPoints();
 
-        public bool Attack(Point2D point)
+        public virtual bool Attack(Point2D point)
         {
             if (point == null)
                 throw new ArgumentNullException(nameof(point));
