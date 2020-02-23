@@ -37,6 +37,17 @@ namespace BattleshipGame.Tests
             .Should().Be(false);
 
         [Test]
+        public void Can_Add_Ship_Which_DoesNot_Overlap_With_Another_Ship()
+        {
+            var board = MakeBoard();
+
+            board.Add(new Ship(0, 0, Direction.Horizontal, 10));
+
+            board.TryAdd(new Ship(2, 5, Direction.Vertical, 4))
+                .Should().Be(true);
+        }
+
+        [Test]
         public void Cannot_Add_Ship_Which_Overlaps_With_Another_Ship()
         {
             var board = MakeBoard();
