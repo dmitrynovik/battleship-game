@@ -30,6 +30,5 @@ namespace BattleshipGame
         public override IReadOnlyCollection<Point2D> GetPoints() => _points;
 
         public override string ToString() => $"{nameof(Ship)} (Left={Left},Top={Top},Size={Size},Orientation={Orientation})";
-
     }
 }

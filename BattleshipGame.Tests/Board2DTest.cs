@@ -1,6 +1,4 @@
-﻿using System;
-using BattleshipGame;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using FluentAssertions;
 
 namespace BattleshipGame.Tests

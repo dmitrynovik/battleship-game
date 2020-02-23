@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 
 namespace BattleshipGame
@@ -20,6 +21,9 @@ namespace BattleshipGame
 
         public bool TryAdd(Piece piece)
         {
+            if (piece == null)
+                throw new ArgumentNullException(nameof(piece));
+
             if (piece.GetPoints().Any(p => p.X >= Width || p.Y >= Height))
             {
                 // out of bounds:

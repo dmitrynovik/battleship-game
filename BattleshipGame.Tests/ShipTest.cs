@@ -1,5 +1,3 @@
-using System;
-using BattleshipGame;
 using NUnit.Framework;
 using FluentAssertions;
 
