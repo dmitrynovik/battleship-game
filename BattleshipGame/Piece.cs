@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace BattleshipGame
 {
+    /// <summary>
+    /// An abstract piece (shape), which is a collection of points, and can be added to a game board.
+    /// </summary>    
     public abstract class Piece
     {
         public abstract IReadOnlyCollection<Point2D> GetPoints();

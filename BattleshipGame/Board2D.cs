@@ -2,9 +2,14 @@ using System.Linq;
 
 namespace BattleshipGame
 {
+    /// <summary>
+    /// An abstract 2D game board.
+    ///
+    /// For the simplicity of implementation, a board can be also viewed as a piece, which is a Union of all pieces (shapes) it holds. 
+    /// </summary>    
     public abstract class Board2D : Piece
     {
-        public Board2D(uint width, uint height)
+        public Board2D(uint width = 10, uint height = 10)
         {
             Height = height;
             Width = width;
@@ -35,5 +40,7 @@ namespace BattleshipGame
         public bool IsGameLost => IsDead;
 
         public override string ToString() => $"{GetType()} {Width}x{Height}";
+
+        // See the base Piece class for the Attack method
     }
 }
