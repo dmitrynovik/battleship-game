@@ -18,8 +18,8 @@ namespace BattleshipGame
 
             _points =  Enumerable.Range(0, Convert.ToInt32(Size))
                 .Select(n => Orientation == Direction.Horizontal ?
-                    new Point2D((uint)(left + n), (uint)top, this) :
-                    new Point2D((uint)left, (uint)(top + n), this)
+                    new Point2D((uint)(left + n), top, this) :
+                    new Point2D(left, (uint)(top + n), this)
                 )
                 .ToArray();
         }
