@@ -6,9 +6,11 @@ namespace BattleshipGame
 {
     /// <summary>
     /// The sparse 2D game board which is only allocating memory for occupied points.
-    /// PROs: allocates very little memory (only for points occupied by pieces)
+    /// PROs: 
+    /// - allocates very little memory (only for the points occupied by pieces)
+    /// - simplicity of implementation (list of points, intersect operation)
     /// CONs: stores unordered points occupied by pieces, 
-    ///     and hence is not good for boards with many pieces as the point search in an unordered collection becomes slow.
+    ///     and hence is not good for boards with many pieces as addition of a piece will take considerable time (point-by-point comparison)
     /// SHOULD BE USED in the following cases:
     /// - small-sized boards (e.g. 10x10)
     /// - sparse boards (the board is large but the pieces are not many)
