@@ -13,7 +13,7 @@ namespace BattleshipGame
     ///     and hence is not good for boards with many pieces as addition of a piece will take considerable time (point-by-point comparison)
     /// SHOULD BE USED in the following cases:
     /// - small-sized boards (e.g. 10x10)
-    /// - sparse boards (the board is large but the pieces are not many)
+    /// - sparse boards (the board is large but the pieces are not many, so that the "occupation rate" is low)
     /// </summary>    
     public class SparseBoard2D : Board2D
     {
