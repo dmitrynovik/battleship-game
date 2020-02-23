@@ -9,7 +9,7 @@ namespace BattleshipGame
     {
         private List<Point2D> _points = new List<Point2D>(0);
 
-        public SparseBoard2D(uint width, uint height) : base(width, height) {  }
+        public SparseBoard2D(uint width = 10, uint height = 10) : base(width, height) {  }
 
         public override IReadOnlyCollection<Point2D> GetPoints() => _points;
 

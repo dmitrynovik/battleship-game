@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipGame", "BattleshipGame\BattleshipGame.csproj", "{D62A368A-101B-42D3-B639-6E9FA30A5FDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipGame.Tests", "BattleshipGame.Tests\BattleshipGame.Tests.csproj", "{6137B394-1C11-4D45-A7FD-FD56B77D070A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{D62A368A-101B-42D3-B639-6E9FA30A5FDE}.Release|x64.Build.0 = Release|Any CPU
 		{D62A368A-101B-42D3-B639-6E9FA30A5FDE}.Release|x86.ActiveCfg = Release|Any CPU
 		{D62A368A-101B-42D3-B639-6E9FA30A5FDE}.Release|x86.Build.0 = Release|Any CPU
+		{6137B394-1C11-4D45-A7FD-FD56B77D070A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6137B394-1C11-4D45-A7FD-FD56B77D070A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6137B394-1C11-4D45-A7FD-FD56B77D070A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6137B394-1C11-4D45-A7FD-FD56B77D070A}.Debug|x64.Build.0 = Debug|Any CPU
+		{6137B394-1C11-4D45-A7FD-FD56B77D070A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6137B394-1C11-4D45-A7FD-FD56B77D070A}.Debug|x86.Build.0 = Debug|Any CPU
+		{6137B394-1C11-4D45-A7FD-FD56B77D070A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6137B394-1C11-4D45-A7FD-FD56B77D070A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6137B394-1C11-4D45-A7FD-FD56B77D070A}.Release|x64.ActiveCfg = Release|Any CPU
+		{6137B394-1C11-4D45-A7FD-FD56B77D070A}.Release|x64.Build.0 = Release|Any CPU
+		{6137B394-1C11-4D45-A7FD-FD56B77D070A}.Release|x86.ActiveCfg = Release|Any CPU
+		{6137B394-1C11-4D45-A7FD-FD56B77D070A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

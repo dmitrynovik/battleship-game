@@ -19,10 +19,9 @@ namespace BattleshipGame
             Orientation = orientation;
 
             _points =  Enumerable.Range(0, Convert.ToInt32(Size))
-                .Cast<uint>()
                 .Select(n => Orientation == Direction.Horizontal ?
-                    new Point2D(x + n, y, this) :
-                    new Point2D(x, y + n, this)
+                    new Point2D((uint)(x + n), (uint)y, this) :
+                    new Point2D((uint)x, (uint)(y + n), this)
                 )
                 .ToArray();
         }
